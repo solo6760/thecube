@@ -15,3 +15,5 @@ That's really expensive. Upon recieving one of these (not that specific one but 
 So our challenge now was to make something that has more functionality, can be modified, and is much cheaper to produce.
 
 ## BOM
+
+Below is a link to an Excel spreadsheet with parts, suggested prices, as well as links to parts (USA). Note that if you have some of these parts, your overall cost will decrease. Also note that you can find parts for cheaper on sites like Aliexpress or substitute cheaper parts.
