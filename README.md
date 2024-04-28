@@ -8,4 +8,4 @@ Assistive Technology is expensive... an unobtainable for lots of people.
 
 Here's an example of a really expensive switch that could be manufactured for way cheaper:
 
-<<a href="https://imgbb.com/"><img src="https://i.ibb.co/PQHF3GP/Screenshot-2024-04-28-135703.png" alt="Screenshot-2024-04-28-135703" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>pichost</a><br />
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/PQHF3GP/Screenshot-2024-04-28-135703.png" alt="Screenshot-2024-04-28-135703" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>pichost</a><br />
