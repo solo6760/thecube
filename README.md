@@ -1,19 +1,43 @@
-# The Cube: Assistive Technology for all
+# The Cube
 
-The Cube aims to bring Assistive Technology to more people at a reduced price. We want to make it clear that Assistive Technology can be cheap, open-source, and can be modified to a person's need.
+An interactive, microcontroller-based audio-visual project running CircuitPython / MicroPython. The device plays distinct audio feedback (`red.mp3`, `yellow.mp3`, `green.mp3`) corresponding to state changes, inputs, or color modes[cite: 1].
 
-## But Why?
+---
 
-Assistive Technology is expensive... and unobtainable for lots of people. This is extremely bad, especially for people who aren't as financially well off as other people.
+## Repository Structure
 
-Here's an example of a really expensive switch that could be manufactured for way cheaper:
+```text
+├── LICENSE
+├── README.md
+└── code/
+    ├── code.py      # Main entry point and control logic
+    ├── green.mp3    # Audio asset for green state/trigger
+    ├── red.mp3      # Audio asset for red state/trigger
+    └── yellow.mp3   # Audio asset for yellow state/trigger
+```
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/PQHF3GP/Screenshot-2024-04-28-135703.png" alt="Screenshot-2024-04-28-135703" border="0"></a><br />
+---
 
-That's really expensive. Upon recieving one of these (not that specific one but a switch from a different company) to check out, we realized that this is just a 3D printed shell with a few buttons, LEDs, and a simple joystick. How is this $129??
+## Hardware Requirements
 
-So our challenge now was to make something that has more functionality, can be modified, and is much cheaper to produce.
+* CircuitPython-compatible microcontroller (e.g., Adafruit Feather, RP2040, SAMD51, or ESP32-S2/S3)
+* I2S DAC decoder / amplifier (or onboard analog audio output / PWM pin)
+* Speaker or 3.5mm audio jack output
+* Color/state trigger inputs (buttons, touch pads, or accelerometer)
 
-## BOM
+---
 
-Below is a link to an Excel spreadsheet with parts, suggested prices, as well as links to parts (USA). Note that if you have some of these parts, your overall cost will decrease. Also note that you can find parts for cheaper on sites like Aliexpress or substitute cheaper parts.
+## Installation & Setup
+
+1. **Prepare the Board**: Install the latest stable release of [CircuitPython](https://circuitpython.org/) on your board.
+2. **Install Required Libraries**: Copy the necessary libraries (`adafruit_audiomp3`, `audiocore`, `audiopwmio` or `audiobusio`) to the `/lib` folder on your `CIRCUITPY` drive.
+3. **Deploy Code & Assets**:
+   * Copy `code/code.py` to the root of your `CIRCUITPY` drive[cite: 1].
+   * Copy `green.mp3`, `red.mp3`, and `yellow.mp3` to the root directory alongside `code.py`[cite: 1].
+4. **Run**: Reset or safely eject and power cycle the board. `code.py` executes automatically on boot[cite: 1].
+
+---
+
+## License
+
+Distributed under the terms of the project [LICENSE](LICENSE)[cite: 1].
